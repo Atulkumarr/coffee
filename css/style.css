@@ -1,0 +1,420 @@
+    /* google fonts */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+     :root {
+        --yellow-color: #f6bb08;
+        --silver: rgba(240, 236, 233, 0.849);
+    }
+    
+     ::selection {
+        background-color: var(--yellow-color);
+        color: white;
+    }
+    
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+        transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -webkit-transition: all 0.2s linear;
+    }
+    
+    html {
+        font-size: 20pxz;
+    }
+    
+    .fix-width {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .yellow-btn {
+        background-color: var(--yellow-color);
+        padding: 14px 35px;
+        border: 1px solid var(--yellow-color);
+        color: white;
+    }
+    
+    .yellow-btn:hover {
+        color: var(--yellow-color);
+        background-color: transparent;
+        border: 1px solid var(--yellow-color);
+        cursor: pointer;
+    }
+    /* banner & navigation */
+    
+    header {
+        background-image: url(../images/hero.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        background-position: top center;
+    }
+    /* navigation */
+    
+    nav {
+        border-bottom: 1px solid white;
+        align-items: center;
+        padding: 0.5rem 0rem 0.5rem 0rem;
+    }
+    
+    nav .logo {
+        align-items: flex-end;
+    }
+    
+    nav .logo p {
+        font-size: 1.3rem;
+        font-weight: 200;
+    }
+    
+    nav .logo img {
+        width: 40%;
+    }
+    
+    nav ul {
+        display: flex;
+    }
+    
+    nav ul li {
+        list-style: none;
+        padding-right: 1rem;
+        margin-right: 1rem;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    /* banner */
+    
+    .banner {
+        padding: 4rem 0rem;
+    }
+    
+    .banner-text {
+        width: 50%;
+    }
+    
+    .banner-text h1 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .banner-text p {
+        font-weight: 500;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .banner-form {
+        width: 45%;
+    }
+    
+    .banner-form form {
+        width: 90%;
+        background-color: var(--silver);
+        margin: 0 auto;
+        padding: 1rem 0rem;
+        border-radius: 12px;
+    }
+    
+    .banner-form form input,
+    select,
+    textarea {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        border: none;
+        margin-top: 15px;
+        padding: 16px 10px;
+        outline: none;
+    }
+    
+    .banner-form select {
+        color: rgb(177, 165, 165);
+    }
+    
+    .banner-form textarea {
+        height: 150px;
+        color: slategrey;
+        margin-bottom: 1.3rem;
+    }
+    /* story section */
+    
+    .story {
+        padding: 4rem 0rem;
+    }
+    
+    .story-text {
+        width: 45%;
+        text-align: center;
+    }
+    
+    .heading {
+        font-size: 2rem;
+        font-weight: 400;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+    
+    .heading::before {
+        content: '';
+        width: 141px;
+        height: 2px;
+        background-color: brown;
+        position: absolute;
+        bottom: 0px;
+    }
+    
+    .story-text p {
+        font-size: 1.2rem;
+        line-height: 25px;
+        margin-bottom: 2rem;
+    }
+    
+    .story-img {
+        width: 45%;
+    }
+    
+    .story-img img {
+        width: 95%;
+    }
+    /* coffee shop section */
+    
+    .coffee-shop-bg {
+        background-image: url(../images/coffee-shop.jpg);
+        padding: 4rem 0rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
+    
+    .border {
+        padding: 5rem 3rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur( 1.0px);
+        -webkit-backdrop-filter: blur( 1.0px);
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18);
+    }
+    
+    .border .coffe-shop {
+        width: 81%;
+        color: white;
+    }
+    
+    .border .coffe-shop h1 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    .border .coffe-shop p {
+        font-size: 1rem;
+        line-height: 25px;
+        font-weight: 500;
+        margin: 2rem 0rem;
+    }
+    /* our coffee section */
+    
+    .our-coffee {
+        padding: 4rem 0rem;
+    }
+    
+    .our-coffee-heading {
+        text-align: center;
+    }
+    
+    .our-coffee-heading::before {
+        width: 164px;
+    }
+    
+    .coffee-slider {
+        padding: 1rem 0rem;
+    }
+    /* owl slider */
+    
+    .coffee-slider .owl-nav {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: -320px;
+    }
+    
+    .owl-carousel .owl-nav button.owl-next {
+        background-color: var(--yellow-color);
+        border: 1px solid var(--yellow-color);
+        outline: none;
+    }
+    
+    .owl-carousel .owl-nav button.owl-prev {
+        background-color: var(--yellow-color);
+        border: 1px solid var(--yellow-color);
+        outline: none;
+    }
+    
+    .owl-theme .owl-nav [class*='owl-']:hover {
+        background: transparent;
+        border: 1px solid var(--yellow-color);
+    }
+    
+    .coffee-slider p {
+        text-align: center;
+        margin-top: 20px;
+    }
+    /* testimonial section */
+    
+    .testimonial {
+        background-image: url(../images/testimonial-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        background-position: top center;
+        padding: 3rem 0rem;
+    }
+    
+    .testimonial-box {
+        max-width: 324px;
+        text-align: center;
+    }
+    
+    .testimonial-heading::before {
+        content: '';
+        width: 161px;
+    }
+    
+    .testimonial-text {
+        padding: 1.8rem 2.8rem;
+        background-color: var(--silver);
+        border-radius: 30px;
+        color: black;
+    }
+    
+    .testimonial-box p {
+        margin: 0.7rem 0rem;
+    }
+    
+    .testimonial-heading:before {
+        background-color: white;
+    }
+    
+    .testimonial-text .mark-heading {
+        font-size: 1.2rem;
+    }
+    
+    .mark-heading::before {
+        width: 85px;
+        background-color: black;
+    }
+    
+    .testimonial-box img {
+        width: 20%;
+        margin-top: 1.3rem;
+    }
+    /* Download */
+    
+    .download {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1.5rem 0rem;
+    }
+    
+    .download h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+    /* footer */
+    
+    footer {
+        text-align: center;
+        padding: 1rem 0rem;
+    }
+    
+    @media(max-width:900px) {
+        .fix-width {
+            max-width: 700px;
+        }
+        .banner-text {
+            width: 95%;
+            margin: 0 auto;
+        }
+        .banner-form {
+            width: 72%;
+            border-radius: 0px;
+            margin-top: 39px;
+        }
+        .banner-form form {
+            border-radius: 1px;
+        }
+        .story-text {
+            width: 100%;
+            text-align: center;
+            padding: 0px 40px;
+        }
+        .story-img {
+            width: 100%;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .story-img img {
+            width: 50%;
+        }
+    }
+    
+    @media (max-width:500px) {
+        html {
+            font-size: 16px;
+        }
+        .banner-form {
+            width: 100%;
+        }
+        .story-img img {
+            width: 63%;
+        }
+        .border .coffe-shop {
+            width: 100%;
+        }
+        .testimonial-box {
+            max-width: 280px;
+            margin: 0 auto;
+        }
+        .testimonial-text {
+            padding: 0.8rem 0.8rem;
+        }
+        .download h1 {
+            font-size: 1rem;
+        }
+        nav .logo {
+            width: 100%;
+            justify-content: center;
+        }
+        nav .logo img {
+            width: 10%;
+        }
+        nav .logo p {
+            margin-left: 7px;
+        }
+        nav ul {
+            width: 100%;
+            justify-content: center;
+            margin-top: 12px;
+        }
+        nav ul li {
+            margin-left: 13px;
+        }
+        .border {
+            padding: 1rem 0.6rem;
+        }
+    }
